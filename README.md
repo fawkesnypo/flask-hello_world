@@ -5,19 +5,8 @@ Hello World em flask
 Para instalar as dependências: pip install -r requirements.txt
 ------------------------------------------------------------------
 
-------------------------------------------------------------------
-*Subir API:*
-------------------------------------------------------------------
-__________________________________________________________________
-__Bash:<br>
-1.export FLASK_APP=main<br>
-2.flask run<br>
+Subir API:
 
-__CMD:<br>
-1.set FLASK_APP=main<br>
-2.flask run<br>
+__linux: python3 main.py
 
-__Powershel:<br>
-1.$env:FLASK_APP = "main"<br>
-2.flask run
-___________________________________________________________________
+__windows: python main.py
