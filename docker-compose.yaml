@@ -1,0 +1,8 @@
+version: "2"
+services:
+  flask:
+    network_mode: host
+    container_name: "flask_app"
+    image: "python-flask_hw"
+    expose:
+      - "8128"
