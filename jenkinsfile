@@ -1,0 +1,10 @@
+pipeline{
+
+    stages{
+
+        stage 'Checkout'{
+            deleteDir()
+            checkout scm
+        }
+    }
+}
