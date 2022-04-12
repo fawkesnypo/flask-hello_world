@@ -12,12 +12,13 @@ pipeline {
             }
         }
 
-        stage('Docker Image build')
+        stage('Docker Image build'){
 
             steps{
                 sh 'docker build . -t python-flask_hw'
             }
-
+        }
+        
         stage('Docker compose up'){
 
             steps{
