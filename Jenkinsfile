@@ -2,12 +2,13 @@ pipeline {
 
     agent any
 
-    sh 'newgrp docker'
+    
     stages{
 
         stage('Stop API') {
 
             steps{
+                sh 'newgrp docker'
                 sh 'docker stop flask_app && docker rm python-flask_hw'
             }
         }
