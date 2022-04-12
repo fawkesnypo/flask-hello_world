@@ -2,12 +2,12 @@ pipeline {
 
     agent any
 
+    sh 'newgrp docker'
     stages{
 
-        stage('Checkout') {
+        stage('Stop API') {
 
             steps{
-                echo 'Checkout'
                 sh 'docker stop flask_app && docker rm python-flask_hw'
             }
         }
@@ -18,7 +18,7 @@ pipeline {
                 sh 'docker build . -t python-flask_hw'
             }
         }
-        
+
         stage('Docker compose up'){
 
             steps{
